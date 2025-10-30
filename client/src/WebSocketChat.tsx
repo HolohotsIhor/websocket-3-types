@@ -5,7 +5,7 @@ export const WebSocketChat = () => {
     const [value, setValue] = useState('')
     const [connected, setConnected] = useState(false)
     const [username, setUsername] = useState('')
-    const socket = useRef()
+    const socket = useRef<WebSocket | null>(null);
 
     const handleSendMessage = async () => {
         const message = {
