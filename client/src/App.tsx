@@ -1,10 +1,12 @@
 import './App.css'
-import { LongPulling } from './LongPulling/LongPulling.tsx';
+import { WebSocketChat } from './WebSocketChat.tsx'
+// import { LongPulling } from './LongPulling/LongPulling.tsx'
 
 function App() {
   return (
     <>
-      <LongPulling />
+      {/*<LongPulling />*/}
+        <WebSocketChat />
     </>
   )
 }
